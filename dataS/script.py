@@ -10,10 +10,13 @@ scottish_hills = {'Hill Name': ['Ben Nevis', 'Ben Macdui', 'Braeriach', 'Cairn T
 
 dataFrame = pd.DataFrame(scottish_hills, columns=[
                          'Hill Name', 'Longitude', 'Height', 'Latitude'])
+dataFrame['Region'] = ['Grampian', 'Cairngorm',
+                       'Cairngorm', 'Cairngorm', 'Cairngorm']
 
 #print(dataFrame)
 #print(dataFrame.head(2))
 #print(dataFrame.tail(2))
 # print(dataFrame["Hill Name"])
 # print(dataFrame["Height"])
-print(dataFrame.Height > 1300)
+# print(dataFrame.Height > 1300)
+print(dataFrame)
